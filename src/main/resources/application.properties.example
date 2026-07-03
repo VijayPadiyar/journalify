@@ -1,0 +1,26 @@
+# Server
+server.port=8080
+
+# Database
+spring.datasource.url=jdbc:mysql://localhost:3306/journalify_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+spring.datasource.username=root
+spring.datasource.password=YOUR_MYSQL_PASSWORD_HERE
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# JPA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.open-in-view=false
+
+# JWT
+app.jwt.secret=run_openssl_rand_hex_32_and_paste_here
+app.jwt.expiration-ms=86400000
+
+# Claude API
+claude.api.key=YOUR_ANTHROPIC_API_KEY_HERE
+claude.api.url=https://api.anthropic.com/v1/messages
+claude.api.model=claude-sonnet-4-5
+
+# CORS
+app.cors.allowed-origins=http://localhost:5173
