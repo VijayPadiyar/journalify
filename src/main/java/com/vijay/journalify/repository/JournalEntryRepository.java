@@ -1,4 +1,4 @@
-package repository;
+package com.vijay.journalify.repository;
 
 public class JournalEntryRepository {
 }

@@ -1,4 +1,4 @@
-package dto;
+package com.vijay.journalify.dto;
 
 public class SummaryResponse {
 }
